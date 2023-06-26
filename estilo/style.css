@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+/* Gerais */
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.row{
+    margin: 0px;
+}
+
+.container{
+    padding: 70px 0px;
+}
+
+p, li{
+    color: grey;
+    font-size: 1em;
+}
+
+/* Barra de navegação */
+
+header, .navbar{
+    background-color: #353D41;
+}
+
+#nav-container{
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.navbar-brand{
+    color: white;
+}
+
+.navbar-brand:hover{
+    color: white;
+}
+
+.navbar-links{
+    color: white;
+}
+
+.navbar-expand-lg .navbar{
+    padding: 1rem .8rem;
+}
