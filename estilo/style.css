@@ -45,3 +45,45 @@ header, .navbar{
 .navbar-expand-lg .navbar{
     padding: 1rem .8rem;
 }
+
+/* Slider */
+
+.container-fluid{
+    padding: 0px;
+}
+
+#mainslider .carousel-inner, #mainslider .carousel-item{ /* tamanho do slider */
+    height: 75vh;
+}
+
+.carousel-caption{ /* altura das escritas no slider */
+    top: 70%;
+}
+
+.carousel-caption h2{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.main-btn { /* botão no slider */
+    background-color: grey;
+    color: white;
+    text-transform: uppercase;
+    width: 200px;
+    height: 60px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: 3px solid transparent;
+    transition: .3s;
+}
+
+.main-btn:hover{
+    text-decoration: none;
+    color: white;
+    background-color: transparent;
+    border-color: grey;
+}
+
+.carousel-indicators .active{  /* indicador de página no slider */
+    background-color: grey;
+}
