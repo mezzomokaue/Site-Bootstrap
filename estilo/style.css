@@ -145,3 +145,22 @@ header, .navbar{
     color: skyblue;
     margin-right: 15px;
 }
+
+/* Contato */
+
+#contact{
+    background-color: skyblue;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 1px 5px 7px rgba(0, 0, 0, 0.171);
+}
+
+#contact-type:hover{
+    cursor: pointer;
+}
+
+#btn-enviar{
+    background-color: rgb(24, 166, 223);
+    box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.171);
+    border: none;
+}
