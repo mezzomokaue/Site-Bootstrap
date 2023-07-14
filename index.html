@@ -16,17 +16,56 @@
     <title>MZ Logística - a solução das estradas</title>
 </head>
 <body class="bg-light">
-  <header>
+  <!-- CONFIG MODAL -->
+  <div class="modal" id="modal-info"> 
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Informações de usuário</h5>
+          <button class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <fieldset disabled>
+              <div class="mb-3">
+                <label for="disabledTextInput" class="form-label">E-mail:</label>
+                <input type="text" id="disabledTextInput" class="form-control" placeholder="anaclara26@gmail.com">
+              </div>
+              <div class="mb-1">
+                <label for="disabledTextInput" class="form-label">Senha:</label>
+                <input type="text" id="disabledTextInput" class="form-control" placeholder="***********">
+              </div>
+            </fieldset>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Mostrar senha</label>
+            </div>
+            <fieldset disabled>
+              <div class="mb-3">
+                <label for="disabledTextInput" class="form-label">Telefone:</label>
+                <input type="text" id="disabledTextInput" class="form-control" placeholder="(49) 98415-0598">
+              </div>
+            </fieldset>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+          <button type="button" class="btn btn-success">Salvar alterações</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <header class="fixed-top">
     <nav class="navbar navbar-expand-md navbar-dark bg-dark">
       <div class="container-fluid">
-        <a href="index.html" class="navbar-brand">
-          <img src="imagens/MZ Logística.png" style="width: 70%;" alt="">
+        <a href="index.html" class="navbar-brand me-">
+          <img src="imagens/logo.png" style="width: 60%;" alt="Logotipo MZ Logística">
         </a>
         <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-principal">
           <i class="navbar-toggler-icon"></i>
         </button>
         <div id="menu-principal" class="navbar-collapse collapse">
-          <ul class="navbar-nav me-auto">
+          <ul class="navbar-nav">
             <li>
               <a href="index.html" class="nav-link">Home</a>
             </li>
@@ -36,19 +75,10 @@
             <li>
               <a href="about.html" class="nav-link">Sobre</a>
             </li>
+            <li>
+              <a href="login.html" class="nav-link">Entrar</a>
+            </li>
           </ul>
-          <div class="dropdown">
-            <a href="#" class="dropdown-toggle text-light text-decoration-none" data-bs-toggle="dropdown">
-              <img src="imagens/img-avatar.jpg" alt="Avatar" width="50" height="50" class="rounded-circle">
-            </a>
-            <ul class="dropdown-menu dropdown-menu-md-end dropdown-menu-dark">
-              <li><a href="#" class="dropdown-item"><span><i class="bi bi-clipboard-data me-1"></i></span>Gestão</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a href="#" class="dropdown-item"><span><i class="bi bi-gear me-1"></i></span>Meu dados</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a href="#" class="dropdown-item"><span><i class="bi bi-box-arrow-right me-1"></i></span>Sair</a></li>
-            </ul>
-          </div>
         </div>
       </div>
     </nav>
@@ -60,7 +90,7 @@
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
       </div>
-      <div class="carousel-inner mt-5" style="max-height: 50vh;">
+      <div class="carousel-inner">
         <div class="carousel-item active">
           <img src="imagens/caminhaocarregando.jpg" class="d-block w-100" alt="Primeiro slide">
         </div>
