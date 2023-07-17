@@ -17,3 +17,10 @@ body{
 .carousel-inner{
     max-height: 620px;
 }
+
+/* FOOTER */
+
+#footer{
+    background-color: rgb(41, 41, 41);
+    color: white;
+}
