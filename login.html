@@ -13,25 +13,35 @@
     <link rel="stylesheet" href="estilo/style.css">
 
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+      body{
+        background-color: rgba(245,245,245,255);
+      }
+    </style>
     <title>Entrar - MZ Logística</title>
 </head>
-<body class="bg-light">
+<body>
   <main>
-    <form style="width: 70vw;">
-        <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label">Email:</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <div class="justify-content-center mt-2">
+      <form style="width: 30vw;">
+        <div>
+          <img style="width: 15vw;" src="imagens/logo.png" alt="Logotipo">
         </div>
-        <div class="mb-3">
-          <label for="exampleInputPassword1" class="form-label">Password</label>
-          <input type="password" class="form-control" id="exampleInputPassword1">
+        <div class="form-floating">
+          <input type="email" class="form-control" id="floatingEmail" placeholder="name@example.com">
+          <label for="floatingInputValue">Email</label>
         </div>
-        <div class="mb-3 form-check">
-          <input type="checkbox" class="form-check-input" id="exampleCheck1">
-          <label class="form-check-label" for="exampleCheck1">Lembrar-me</label>
+        <div class="form-floating">
+          <input type="password" class="form-control" id="floatingPassword" placeholder="Senha">
+          <label for="floatingPassword">Senha</label>
         </div>
-        <button type="submit" class="btn btn-primary">Entrar</button>
+        <div class="my-2 form-check d-flex justify-content-center">
+          <input type="checkbox" class="form-check-input " id="exampleCheck1">
+          <label class="form-check-label ms-1" for="exampleCheck1">Lembrar-me</label>
+        </div>
+        <button type="submit" class="w-100 btn btn-lg btn-primary">Entrar</button>
       </form>
+    </div>
   </main>
   <script src="js/scripts.js"></script>
 </body>
