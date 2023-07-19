@@ -96,20 +96,24 @@
   <main>
     <section> <!--SLIDER-->
       <div id="slider" class="carousel slide" data-bs-ride="carousel"> <!--COLOCAR IMAGENS COM RESOLUÇÃO DIFERENTE PARA CELULARES-->
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="imagens/caminhaocarregando.jpg" class="d-block w-100 imgnormal" alt="Primeiro slide">
+            <picture>
+              <source media="(max-width: 768px)" srcset="imagens/caminhaocarregandovertical.jpg">
+              <img src="imagens/caminhaocarregando.jpg" class="d-block w-100 imgnormal" alt="Primeiro slide">
+            </picture>
           </div>
           <div class="carousel-item">
-            <img src="imagens/caminhaopedra.jpg" class="d-block w-100 imgnormal" alt="Segundo slide">
+            <picture>
+              <source media="(max-width: 768)" srcset="imagens/caminhaopedravertical.jpg">
+              <img src="imagens/caminhaopedra.jpg" class="d-block w-100 imgnormal" alt="Segundo slide">
+            </picture>
           </div>
           <div class="carousel-item">
-            <img src="imagens/encomenda.jpg" class="d-block w-100 imgnormal" alt="Terceiro slide">
+            <picture>
+              <source media="(max-width: 768)" srcset="imagens/encomendavertical.jpg">
+              <img src="imagens/encomenda.jpg" class="d-block w-100 imgnormal" alt="Terceiro slide">
+            </picture>
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#slider" data-bs-slide="prev">
@@ -120,6 +124,11 @@
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden"></span>
         </button>
+        <div class="carousel-indicators">
+          <button data-bs-slide-to="0" data-bs-target="#slider" class="active"></button>
+          <button data-bs-slide-to="1" data-bs-target="#slider"></button>
+          <button data-bs-slide-to="2" data-bs-target="#slider"></button>
+        </div>
       </div>
     </section>
     <section> <!--ABOUT SECTION-->
