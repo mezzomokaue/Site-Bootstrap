@@ -12,6 +12,12 @@ body{
     box-shadow: 1px 3px 7px rgba(0, 0, 0, 0.301);
 }
 
+.navbar a:hover{
+    color: rgba(41,100,253,255);
+    background-color: transparent;
+    transition: .3s;
+}
+
 /* MAIN */
 
 .carousel-inner{
@@ -20,7 +26,64 @@ body{
 
 /* FOOTER */
 
-#footer{
-    background-color: rgb(41, 41, 41);
+#footerid{
+    background-color: rgb(56, 56, 56);
     color: white;
+    margin-top: 35px;
+    display: block;
+    padding-top: 40px;
+    padding-bottom: 0px;
+    font-size: 15px;
+    margin-bottom: 0px;
+}
+
+#footerid ul{
+    padding-left: 2px;
+}
+
+#footerid li{
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+
+#footerid a{
+    color: white;
+    text-decoration: none;
+}
+
+#footerid a:hover{
+    color: #c7c8c9;
+}
+
+#footerid h4{
+    text-transform: uppercase;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+#footerid .footer-links li a:hover{
+    color: rgba(41,100,253,255);
+    background-color: transparent;
+    transition: .3s;
+}
+
+
+#footerid .social-links a {
+    font-size: 18px;
+    display: inline-block;
+    background-color: #545454;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 50px;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: .3s;
+}
+
+#footerid .social-links a:hover{
+    color: rgba(41,100,253,255);
+    background-color: transparent;
+    transition: .3s;
 }
